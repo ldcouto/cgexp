@@ -1,3 +1,4 @@
+# Maven stuff
 target/
 pom.xml.tag
 pom.xml.releaseBackup
@@ -6,3 +7,18 @@ pom.xml.next
 release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
+
+# Vim metafiles
+*.un~
+*.swp
+
+# Eclipse and Java stuff
+.classpath
+.settings
+.project
+
+# Overture stuff
+projects/vdm/generated
+
+# Copied VDM model
+projects/cgversion/src/main/resources/modelcopied
