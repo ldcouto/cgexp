@@ -1,0 +1,21 @@
+class MyTest is subclass of TestCase
+
+operations
+
+public runFullSuite : () ==> ()
+runFullSuite () == 
+let	ts: TestSuite = new TestSuite(new MyTest()),
+		result = new TestResult()
+in
+(
+  ts.run(result);
+  IO`print(result.toString());
+);
+
+public testAdd : () ==> ()
+testAdd () ==
+let m = new Model()
+in
+  Assert`assertTrue("Expected m.add(1,2) to yield 3", m.add(1,2) = 3);
+
+end MyTest
