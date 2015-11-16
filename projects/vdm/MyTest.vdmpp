@@ -12,10 +12,17 @@ in
   IO`print(result.toString());
 );
 
-public testAdd : () ==> ()
-testAdd () ==
+public testAddPos : () ==> ()
+testAddPos () ==
 let m = new Model()
 in
   Assert`assertTrue("Expected m.add(1,2) to yield 3", m.add(1,2) = 3);
+  
+public testAddNeg : () ==> ()
+testAddNeg () ==
+let mk_(a,b) = mk_(-4,-10),
+    m = new Model()
+in
+  Assert`assertTrue("Expected m.add(-4,-10) to yield -14", m.add(a,b) = -14);
 
 end MyTest
