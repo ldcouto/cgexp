@@ -14,7 +14,10 @@ in
 
 public testAddPos : () ==> ()
 testAddPos () ==
-let m = new Model()
+let m = new Model(),
+    - = utilOp1(),
+    - = utilOp2(),
+    - = utilOp3()
 in
   Assert`assertTrue("Expected m.add(1,2) to yield 3", m.add(1,2) = 3);
   
@@ -24,5 +27,17 @@ let mk_(a,b) = mk_(-4,-10),
     m = new Model()
 in
   Assert`assertTrue("Expected m.add(-4,-10) to yield -14", m.add(a,b) = -14);
+
+--
+-- The util ops do not get annotated with '@Test' when they are code generated
+--
+private utilOp1 : () ==> nat
+utilOp1 () == return 0;
+
+public static utilOp2 : () ==> nat
+utilOp2 () == return 0;
+
+public utilOp3 : () ==> nat
+utilOp3 () == return 0;
 
 end MyTest
