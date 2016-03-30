@@ -11,7 +11,8 @@
   <groupId>dk.au.sweng.cge</groupId>
   <artifactId>cgversion</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-
+  <name>Code Generated Version</name>
+  
   <properties>
     <modelpath>target/modelcopied</modelpath>
     <cgplugin.version>2.3.5-SNAPSHOT</cgplugin.version>
