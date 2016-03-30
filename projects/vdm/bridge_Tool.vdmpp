@@ -1,9 +1,9 @@
 class bridge_Tool
 
-
 operations
-	public static  add : int * int ==> int
-  add (a,b) == is not yet specified;
+
+public static  add : int * int ==> int
+add (a,b) == is not yet specified;
 
 end bridge_Tool
 

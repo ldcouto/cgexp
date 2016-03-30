@@ -1,9 +1,8 @@
 class Model
 
-
 operations
+
 public add : int * int ==> int
 add (a,b) == return bridge_Tool`add(a,b);
-
 
 end Model
