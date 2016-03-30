@@ -20,7 +20,7 @@
     <module>bridge</module>
     <module>cgversion</module>
     <module>delegate</module>
-    <module>logic</module>
+    <module>external</module>
     <!-- The VDM model is not included as a module -->
   </modules>
 

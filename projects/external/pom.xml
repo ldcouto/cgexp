@@ -9,8 +9,10 @@
   </parent>
 
   <groupId>dk.au.sweng.cge</groupId>
-  <artifactId>logic</artifactId>
+  <artifactId>external</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <name>External Component</name>
+  
   <build>
     <plugins>
       <plugin>
