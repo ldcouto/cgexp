@@ -6,15 +6,15 @@ real system components.
 
 The projects folder contains the following folders:
 
-* vdm - the VDM model that integrates an external component.
-* bridge - maven project containing the Java glue code used to access
+* `vdm` - the VDM model that integrates an external component.
+* `bridge` - maven project containing the Java glue code used to access
   the external component via the VDM model.
-* delegate - maven project containing the Java glue code used to
+* `delegate` - maven project containing the Java glue code used to
   access the external component via the code generated version of the
   VDM Model.
-* external - maven project containing the external component used by
+* `external` - maven project containing the external component used by
   the VDM model and the code generated version of the VDM model.
-* cgversion - maven project that integrates the VDM model, external
+* `cgversion` - maven project that integrates the VDM model, external
   component and delegate to produce the code generated version of the
   system.
 
