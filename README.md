@@ -18,7 +18,7 @@ The projects folder contains the following folders:
   component and delegate to produce the code generated version of the
   system.
 
-# Usage:
+### Usage:
 
 Go to the `projects` directory.
 
@@ -42,6 +42,6 @@ To clean all projects issue the following command:
 mvn clean
 ~~~
 
-# Requirements:
+### Requirements:
 * Java 1.8 or newer.
 * Maven 3.0 or newer.
