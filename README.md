@@ -1,15 +1,47 @@
-# cgexp
+# Delegate Tutorial
 
-Mini projects to experiment with CG integration for a software-in-the-loop
-modelling process in Overture.
+Mini projects used to demonstrate usage of the delegate feature, which
+enables combined execution of model components (written in VDM) and
+real system components.
 
-The projects are:
+The projects folder contains the following folders:
 
-* vdm - the VDM model to be used for both software-in-the-loop and code
-  generation
-* logic - the Java project that holds the actual logic we are using in the
-  model and the CG version
-* bridge - Java glue code for accessing the logic via the VDM model
-* delegate - Java glue code for accessing the logic via the CG version
-* cgversion - Maven project that integrates the model, logic and delegate to
-  produce the software version of the system
+* vdm - the VDM model that integrates an external component.
+* bridge - maven project containing the Java glue code used to access
+  the external component via the VDM model.
+* delegate - maven project containing the Java glue code used to
+  access the external component via the code generated version of the
+  VDM Model.
+* external - maven project containing the external component used by
+  the VDM model and the code generated version of the VDM model.
+* cgversion - maven project that integrates the VDM model, external
+  component and delegate to produce the code generated version of the
+  system.
+
+# Usage:
+
+Go to the `projects` directory.
+
+To code generate the VDM tests and produce the code generated version
+of the system issue the following command:
+  
+~~~
+mvn install
+~~~
+
+To test the code generated version of the system using the code
+generated VDM tests issue the following command:
+
+~~~
+mvn test
+~~~
+  
+To clean all projects issue the following command:
+
+~~~
+mvn clean
+~~~
+
+# Requirements:
+* Java 1.8 or newer.
+* Maven 3.0 or newer.
