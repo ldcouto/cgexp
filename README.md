@@ -36,7 +36,7 @@ generated VDM tests issue the following command:
 mvn test
 ~~~
   
-To clean all projects issue the following command:
+To clean all projects and delete generated code issue the following command:
 
 ~~~
 mvn clean
