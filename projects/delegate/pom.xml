@@ -31,7 +31,7 @@
     <dependency>
       <groupId>org.overturetool.core.codegen</groupId>
       <artifactId>codegen-runtime</artifactId>
-      <version>2.3.5-SNAPSHOT</version>
+      <version>${ovt.version}</version>
     </dependency>
     <dependency>
       <groupId>dk.au.sweng.cge</groupId>

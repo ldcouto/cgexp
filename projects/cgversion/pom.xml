@@ -15,7 +15,7 @@
   
   <properties>
     <modelpath>target/modelcopied</modelpath>
-    <cgplugin.version>2.3.5-SNAPSHOT</cgplugin.version>
+    <cgplugin.version>${ovt.version}</cgplugin.version>
   </properties>
 
   <dependencies>

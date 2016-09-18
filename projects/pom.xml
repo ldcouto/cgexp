@@ -5,6 +5,11 @@
     <maven>3.0</maven>
   </prerequisites>
 
+  <properties>
+    <ovt.version>2.4.1-SNAPSHOT</ovt.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
   <packaging>pom</packaging>
 
   <groupId>dk.au.sweng</groupId>
@@ -23,9 +28,5 @@
     <module>external</module>
     <!-- The VDM model is not included as a module -->
   </modules>
-
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
 
 </project>
