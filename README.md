@@ -1,10 +1,10 @@
 # Delegate Tutorial
 
-Mini projects used to demonstrate usage of the delegate feature, which
+Mini project used to demonstrate usage of the delegate feature, which
 enables combined execution of model components (written in VDM) and
 real system components.
 
-The projects folder contains the following folders:
+The `projects` folder contains the following folders:
 
 * `vdm` - the VDM model that integrates an external component.
 * `bridge` - maven project containing the Java glue code used to access
@@ -18,30 +18,31 @@ The projects folder contains the following folders:
   component and delegate to produce the code generated version of the
   system.
 
+
+### Requirements:
+* Java 1.8 or newer.
+* Maven 3.0 or newer.
+
 ### Usage:
 
 Go to the `projects` directory.
 
 To code generate the VDM tests and produce the code generated version
-of the system issue the following command:
+of the system execute:
   
 ~~~
 mvn install
 ~~~
 
 To test the code generated version of the system using the code
-generated VDM tests issue the following command:
+generated VDM tests execute:
 
 ~~~
 mvn test
 ~~~
   
-To clean all projects and delete generated code issue the following command:
+To clean all projects and delete generated code execute:
 
 ~~~
 mvn clean
 ~~~
-
-### Requirements:
-* Java 1.8 or newer.
-* Maven 3.0 or newer.
