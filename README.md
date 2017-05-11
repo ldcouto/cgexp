@@ -30,19 +30,19 @@ Go to the `projects` directory.
 To code generate the VDM tests and produce the code generated version
 of the system execute:
   
-~~~
+```
 mvn install
-~~~
+```
 
 To test the code generated version of the system using the code
 generated VDM tests execute:
 
-~~~
+```
 mvn test
-~~~
+```
   
 To clean all projects and delete generated code execute:
 
-~~~
+```
 mvn clean
-~~~
+```
