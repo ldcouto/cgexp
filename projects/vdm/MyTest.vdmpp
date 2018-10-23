@@ -1,5 +1,10 @@
 class MyTest is subclass of TestCase
 
+instance variables
+
+a : int := 0;
+b : int := 0;
+
 operations
 
 public runFullSuite : () ==> ()
@@ -12,18 +17,38 @@ in
   IO`print(result.toString());
 );
 
+--
+-- Gets annotated using '@Before' in the generated code
+--
+public setUp : () ==> ()
+setUp() ==
+(
+  a := 1;
+  b := 2;
+);
+
+--
+-- Gets annotated using '@After' in the generated code
+--
+public tearDown : () ==> ()
+tearDown() ==
+(
+  a := -1;
+  b := -1;
+);
+
 public testAddPos : () ==> ()
 testAddPos () ==
 let m = new Model()
 in
-  Assert`assertTrue("Expected m.add(1,2) to yield 3", m.add(1,2) = 3);
+  Assert`assertTrue("Expected m.add(a,b) to yield 3", m.add(a,b) = 3);
   
 public testAddNeg : () ==> ()
 testAddNeg () ==
-let mk_(a,b) = mk_(-4,-10),
+let mk_(x,y) = mk_(-a,-b),
     m = new Model()
 in
-  Assert`assertTrue("Expected m.add(-4,-10) to yield -14", m.add(a,b) = -14);
+  Assert`assertTrue("Expected m.add(x,y) to yield -3", m.add(x,y) = -3);
 
 --
 -- The util ops do not get annotated with '@Test' when they are code generated
