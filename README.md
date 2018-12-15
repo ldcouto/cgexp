@@ -1,8 +1,8 @@
 # Delegate Tutorial
 
-Mini project used to demonstrate usage of the delegate feature, which
-enables combined execution of model components (written in VDM) and
-real system components.
+Mini project used to demonstrate usage of the *delegate* feature,
+which enables code generation of VDM models that use real system
+components.
 
 The `projects` folder contains the following folders:
 
